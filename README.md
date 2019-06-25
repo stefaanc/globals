@@ -134,7 +134,7 @@ $MY_VAR=some value
 
 ```
 
-> :info:  
+> :information_source:  
 > The scripts folder contains a more elaborate version of the above scripts.
 
 <br>
