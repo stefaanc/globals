@@ -2,7 +2,7 @@
 
 **a small library to provide a form of global variables in a bash shell**
 
-The library can be taken from the `scripts` folder, put in your folder with scripts, and dot-sourced in your scripts.
+The library can be taken from the `scripts` folder, put in your folder with scripts, and dot-source in your scripts.
 
 ```bash
 . ./.globals.bash
