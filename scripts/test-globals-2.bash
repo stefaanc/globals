@@ -1,13 +1,13 @@
 #!/bin/bash
 
-# . ./.globals.bash
+. "$( dirname ${BASH_SOURCE[0]} )/.globals.bash"
 
 echo "### test-globals-2.bash"
 
 echo "### \$GLOBALS_INJECT=$GLOBALS_INJECT"
 echo ""
 
-call ./test-globals-3.bash $1
+call "$( dirname ${BASH_SOURCE[0]} )/test-globals-3.bash" $1
 echo "\$?=$?"
 echo ""
 

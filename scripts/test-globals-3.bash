@@ -1,6 +1,6 @@
 #!/bin/bash
 
-# . ./.globals.bash
+. "$( dirname ${BASH_SOURCE[0]} )/.globals.bash"
 
 echo "### test-globals-3.bash"
 
