@@ -34,9 +34,6 @@ The functions provided:
   - A global variable `$GLOBALS_INJECT` is reserved to communicate the dynamically created filedescriptor of the inject-stream between calling and called scripts.  This inject-stream is used to send the required information to set global variables, from the called script back to the calling script.  This inject-stream is only open for as long as the called script is running.
 
 
-> :bulb:  
-> You only need to source the library in the root-script.  The functions are exported, so are available to all called scripts.
-
 ## Example
 
 Let's make three scripts
@@ -64,6 +61,8 @@ Let's make three scripts
 - `test-globals-2.bash` calls `test-globals-3.bash`
 
   ```bash
+  . ./.globals.bash
+  
   echo "### test-globals-2.bash"
   echo ""
 
@@ -84,6 +83,8 @@ Let's make three scripts
 - `test-globals-3.bash` set a global variable
 
   ```bash
+  . ./.globals.bash
+  
   echo "### test-globals-3.bash"
   echo ""
 
